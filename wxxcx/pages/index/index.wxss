@@ -1,0 +1,11 @@
+/* pages/index/index.wxss */
+.menu image{
+  width: 150rpx;
+  height: 180rpx;
+  border-radius: 50rpx;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

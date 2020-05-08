@@ -1,0 +1,35 @@
+/* pages/news/news.wxss */
+.action .mune{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.action .mune image{
+  width: 200rpx;
+  height: 225rpx;
+}
+
+.action .new .all image{
+  width: 100rpx;
+  height: 115rpx;
+}
+.action .new .all{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.action .new .all .inc{
+  width: 600rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 35rpx;
+  color: #8c8c8c;
+}

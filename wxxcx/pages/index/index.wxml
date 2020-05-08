@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+
+<view class="menu">
+  <image src="/images/like.jpg"></image>
+  <image src="/images/like.jpg"></image>
+  <image src="/images/like.jpg"></image>
+  <image src="/images/like.jpg"></image>
+</view>
