@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  clickMe:function(e){
+    console.log(e)
+    var nid = e.currentTarget.dataset.nid;
+    console.log(nid);
   }
 })

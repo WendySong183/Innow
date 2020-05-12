@@ -35,6 +35,8 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -57,7 +59,15 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/bind/bind",
+					"pathName": "pages/bind/bind",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }

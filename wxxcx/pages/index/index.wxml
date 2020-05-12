@@ -6,3 +6,5 @@
   <image src="/images/like.jpg"></image>
   <image src="/images/like.jpg"></image>
 </view>
+<view bindlongtap="clickMe" data-nid="123">点击跳转</view>
+<navigator url="/pages/bind/bind">tiaozhuan</navigator>
