@@ -9,3 +9,14 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
+.menu2 image{
+  width: 180rpx;
+  height: 200rpx;
+}
+.menu2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20rpx;
+}

@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    photoList:[
+      "/images/like.jpg",
+      "/images/juaner.jpg",
+      "/images/kingkang.jpeg",
+      "/images/xishihui.jpeg"
+    ]
   },
 
   /**

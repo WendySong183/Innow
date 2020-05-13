@@ -1,10 +1,10 @@
 <!--pages/index/index.wxml-->
 
-<view class="menu">
-  <image src="/images/like.jpg"></image>
-  <image src="/images/like.jpg"></image>
-  <image src="/images/like.jpg"></image>
-  <image src="/images/like.jpg"></image>
+
+
+
+<view class="menu2">
+  <image wx:for="{{photoList}}" wx:key="key" src="{{item}}"></image>
 </view>
-<view bindlongtap="clickMe" data-nid="123">点击跳转</view>
-<navigator url="/pages/bind/bind">tiaozhuan</navigator>
+
+<navigator url="/pages/bind/bind">点击跳转</navigator>
