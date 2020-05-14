@@ -4,7 +4,8 @@
     "pages/show/show",
     "pages/news/news",
     "pages/mine/mine",
-    "pages/bind/bind"
+    "pages/bind/bind",
+    "pages/login/login"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFDAB9",
