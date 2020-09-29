@@ -1,0 +1,39 @@
+/* pages/show/show.ttss */
+.small image{
+  width: 150rpx;
+  height: 180rpx;
+  padding-right: 20rpx;
+}
+
+.action .item{
+
+}
+
+.action .item .title{
+  font-size: 60rpx;
+  font-weight: 700;
+}
+
+.action .item .statu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 40rpx;
+  color: #8c8c8c;
+}
+
+.action .item .big{
+  height: 500rpx;
+  overflow:hidden
+}
+
+.big image{
+  padding-bottom: 50rpx;
+}
+
+.action .item .small{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+

@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view>
+  <text></text>
+</view>
+<view class="photo">
+  <image wx:for="{{photoList}}" wx:key="key" src="{{item}}" bindtap='previewImage'></image>
+</view>

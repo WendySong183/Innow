@@ -1,0 +1,49 @@
+/* pages/mine/mine.wxss */
+page{
+  background-color: #171824;
+}
+/* .pic{
+ 
+  height: 422rpx;  
+} */
+.pic image{
+  height: 422rpx;
+}
+
+.introduce{
+
+margin: 50rpx;
+line-height: 100rpx;
+color: #e8ebee;
+}
+
+.border{
+  border-bottom:1px solid #1f202c;
+}
+.user{
+  height: 200rpx;
+  position: relative;
+}
+.user image{
+width: 230rpx;
+height: 230rpx;
+border-radius: 50%;
+position: relative;
+top: -60rpx;
+right: -50rpx;
+}
+.name{
+  position: relative;
+  top: -100rpx;
+  right: -80rpx;
+  color: #e8ebee;
+  font-size: 80rpx;
+  font-weight: 700;
+}
+.id{
+  font-size: 30rpx;
+  color:#65676f;
+  position: relative;
+  top: -100rpx;
+  right: -350rpx;
+}

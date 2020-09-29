@@ -1,1 +1,10 @@
-<view class="intro">Welcome to Mini Program</view>
+<!--pages/index/index.ttml-->
+
+
+
+
+<view class="menu2">
+  <image tt:for="{{photoList}}" tt:key="key" src="{{item}}"></image>
+</view>
+
+<navigator url="/pages/bind/bind">点击跳转</navigator>

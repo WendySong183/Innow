@@ -1,11 +1,9 @@
-// pages/index/index.js
+// pages/show/show.js
 Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    photoList: ["/images/like.jpg", "/images/juaner.jpg", "/images/kingkang.jpeg", "/images/xishihui.jpeg"]
-  },
+  data: {},
 
   /**
    * 生命周期函数--监听页面加载
@@ -45,10 +43,5 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {},
-  clickMe: function (e) {
-    console.log(e);
-    var nid = e.currentTarget.dataset.nid;
-    console.log(nid);
-  }
+  onShareAppMessage: function () {}
 });

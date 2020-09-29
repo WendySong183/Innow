@@ -1,0 +1,12 @@
+<!--pages/bind/bind.ttml-->
+
+<view>用户名:{{name}}</view>
+<image src="{{path}}" style="width:200rpx;height:200rpx"></image>
+<button open-type="getUserInfo" bindgetuserinfo="fetchInfo">获取用户信息</button>
+
+<view bindtap="getLocalPath">{{localPath}}</view>
+
+<view bindtap="uploadImage">请上传图片</view>
+<view class="item">
+<image tt:for="{{imageList}}" src="{{item}}"></image>
+</view>

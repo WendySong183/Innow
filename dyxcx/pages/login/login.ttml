@@ -1,0 +1,6 @@
+<!--pages/login/login.ttml-->
+<text>pages/login/login.wxml</text>
+<view>手机号是：{{phone}}</view>
+<input value="{{phone}}" bindinput="bindLogin" placeholder="请输入手机号"></input>
+<view>验证码：{{message}}</view>
+<input value="{{message}}" bindinput="bindMessage" placeholder="请输入验证码"></input>

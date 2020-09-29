@@ -1,0 +1,6 @@
+/* pages/bind/bind.ttss *//* pages/bind/bind.ttss */
+.item image{
+  width: 200rpx;
+  height: 200rpx;
+  padding: 20rpx;
+}

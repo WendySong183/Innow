@@ -1,0 +1,22 @@
+/* pages/index/index.wxss */
+page{
+  background-color: #171824;
+}
+text{
+color: #e8e8e8;
+font-size: 50rpx;
+}
+.photo{
+  margin-top: 20rpx;
+width: 750rpx;
+height: 340rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+}
+.photo image{
+  width: 200rpx;
+  height: 320rpx;
+  
+}

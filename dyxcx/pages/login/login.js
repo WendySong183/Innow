@@ -1,10 +1,21 @@
-// pages/index/index.js
+// pages/login/login.js
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    photoList: ["/images/like.jpg", "/images/juaner.jpg", "/images/kingkang.jpeg", "/images/xishihui.jpeg"]
+    phone: "",
+    message: ""
+  },
+  bindLogin: function (e) {
+    this.setData({
+      phone: e.detail.value
+    });
+  },
+  bindMessage: function (e) {
+    this.setData({
+      message: e.detail.value
+    });
   },
 
   /**
@@ -45,10 +56,5 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {},
-  clickMe: function (e) {
-    console.log(e);
-    var nid = e.currentTarget.dataset.nid;
-    console.log(nid);
-  }
+  onShareAppMessage: function () {}
 });

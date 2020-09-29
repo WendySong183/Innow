@@ -1,4 +1,22 @@
-.intro {
-  margin: 30px;
-  text-align: center;
+/* pages/index/index.ttss */
+.menu image{
+  width: 150rpx;
+  height: 180rpx;
+  border-radius: 50rpx;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu2 image{
+  width: 180rpx;
+  height: 200rpx;
+}
+.menu2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20rpx;
 }

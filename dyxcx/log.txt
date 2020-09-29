@@ -1,0 +1,126 @@
+{
+    "您需要额外关注的转化日志信息": {},
+    "其他常规转化日志信息": {
+        "0": {
+            "time": "2020-09-29T03:00:30.877Z",
+            "type": "stdOut",
+            "message": "🎊    Congratulations, transform done! Please check transform log in"
+        },
+        "1": {
+            "time": "2020-09-29T03:00:30.878Z",
+            "type": "stdOut",
+            "message": "📝    /Users/nika/InnowWork/Innow/dyxcx/log.txt"
+        },
+        "2": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxss file suffix",
+            "file": "bind/bind.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "3": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxml file suffix",
+            "file": "index/index.wxml",
+            "message": "转换了视图文件后缀, wxml ==> ttml"
+        },
+        "4": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxss file suffix",
+            "file": "index/index.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "5": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxml file suffix",
+            "file": "login/login.wxml",
+            "message": "转换了视图文件后缀, wxml ==> ttml"
+        },
+        "6": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxss file suffix",
+            "file": "login/login.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "7": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxml file suffix",
+            "file": "mine/mine.wxml",
+            "message": "转换了视图文件后缀, wxml ==> ttml"
+        },
+        "8": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxss file suffix",
+            "file": "mine/mine.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "9": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxml file suffix",
+            "file": "news/news.wxml",
+            "message": "转换了视图文件后缀, wxml ==> ttml"
+        },
+        "10": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxss file suffix",
+            "file": "news/news.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "11": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxml file suffix",
+            "file": "show/show.wxml",
+            "message": "转换了视图文件后缀, wxml ==> ttml"
+        },
+        "12": {
+            "time": "2020-09-29T03:00:30.372Z",
+            "type": "transform wxss file suffix",
+            "file": "show/show.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "13": {
+            "time": "2020-09-29T03:00:30.434Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dyxcx/pages/bind/bind.js",
+            "row": 16,
+            "column": 4,
+            "before": "wx.getUserInfo",
+            "after": "tt.getUserInfo",
+            "message": "api: getUserInfo 成功转化"
+        },
+        "14": {
+            "time": "2020-09-29T03:00:30.435Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dyxcx/pages/bind/bind.js",
+            "row": 30,
+            "column": 4,
+            "before": "wx.chooseLocation",
+            "after": "tt.chooseLocation",
+            "message": "api: chooseLocation 成功转化"
+        },
+        "15": {
+            "time": "2020-09-29T03:00:30.435Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dyxcx/pages/bind/bind.js",
+            "row": 40,
+            "column": 2,
+            "before": "wx.chooseImage",
+            "after": "tt.chooseImage",
+            "message": "api: chooseImage 成功转化"
+        },
+        "16": {
+            "time": "2020-09-29T03:00:30.467Z",
+            "type": "stdOut",
+            "message": "🍻    Successfully transform js file"
+        },
+        "17": {
+            "time": "2020-09-29T03:00:30.503Z",
+            "type": "stdOut",
+            "message": "🍻    Successfully transform wxml file"
+        },
+        "18": {
+            "time": "2020-09-29T03:00:30.512Z",
+            "type": "stdOut",
+            "message": "🍻    Successfully transform wxss file"
+        }
+    }
+}

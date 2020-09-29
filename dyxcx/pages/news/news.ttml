@@ -1,0 +1,32 @@
+<!--pages/news/news.ttml-->
+<view class="action">
+  <view class="mune">
+    <image src="/images/like.jpg"></image>
+    <image src="/images/like.jpg"></image>
+    <image src="/images/like.jpg"></image>
+  </view>
+
+  <view class="new">
+    <view class="all">
+      <image src="/images/like.jpg"></image>
+      <view class="inc">
+        <view class="item">
+          <view class="title">系统消息</view>
+          <view class="time">2020-1-1</view>
+        </view>
+        <view class="text">就不告诉你啊哈哈哈哈哈哈哈哈哈哈哈</view>
+      </view>
+    </view>
+
+        <view class="all">
+      <image src="/images/like.jpg"></image>
+      <view class="inc">
+        <view class="item">
+          <view class="title">系统消息</view>
+          <view class="time">2020-1-11</view>
+        </view>
+        <view class="text">告诉你不不不不不不不不不不不不不不不</view>
+      </view>
+    </view>
+  </view>
+</view>

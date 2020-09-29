@@ -1,0 +1,14 @@
+<!--pages/mine/mine.wxml-->
+
+ <view class="pic">
+  <image  src="/images/mish.jpeg" ></image>
+ </view>
+<view class="user">
+  <image src="/images/icon.jpeg"></image>
+  <text class="name">觅喜姐姐\n</text>
+  <text class="id">抖音号：MishShao\n</text>
+ </view>
+ <view class="introduce">
+    <view class="border"></view>
+    <text >简介：\n职业画家/原画师\n感谢与每一个热爱国漫的你相遇\n</text>
+  </view>

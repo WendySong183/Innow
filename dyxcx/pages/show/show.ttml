@@ -1,0 +1,23 @@
+<!--pages/show/show.ttml-->
+<view class="action">
+  <view class="item">
+    <view class="title">第一场拍卖</view>
+
+    <view class="statu">
+      <view class="time">2020-1-1</view>
+      <view class="num">666次围观</view>
+    </view>
+
+    <view class="big">
+      <image src="/images/like.jpg"></image>
+    </view>
+
+    <view class="small">
+      <image src="/images/like.jpg"></image>
+      <image src="/images/like.jpg"></image>
+      <image src="/images/like.jpg"></image>
+      <image src="/images/like.jpg"></image>
+    </view>
+
+  </view>
+</view>
