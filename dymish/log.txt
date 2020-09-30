@@ -1,0 +1,177 @@
+{
+    "您需要额外关注的转化日志信息": {
+        "0": {
+            "time": "2020-09-30T06:12:50.032Z",
+            "type": "component check warning",
+            "file": "/Users/nika/InnowWork/Innow/dymish/pages/logs/logs.ttml",
+            "message": "组件：block 未能被识别，请确保该写法正确"
+        }
+    },
+    "其他常规转化日志信息": {
+        "0": {
+            "time": "2020-09-30T06:12:50.438Z",
+            "type": "stdOut",
+            "message": "🎊    Congratulations, transform done! Please check transform log in"
+        },
+        "1": {
+            "time": "2020-09-30T06:12:50.438Z",
+            "type": "stdOut",
+            "message": "📝    /Users/nika/InnowWork/Innow/dymish/log.txt"
+        },
+        "2": {
+            "time": "2020-09-30T06:12:49.490Z",
+            "type": "transform wxss file suffix",
+            "file": "index/index.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "3": {
+            "time": "2020-09-30T06:12:49.490Z",
+            "type": "transform wxml file suffix",
+            "file": "logs/logs.wxml",
+            "message": "转换了视图文件后缀, wxml ==> ttml"
+        },
+        "4": {
+            "time": "2020-09-30T06:12:49.490Z",
+            "type": "transform wxss file suffix",
+            "file": "logs/logs.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "5": {
+            "time": "2020-09-30T06:12:49.490Z",
+            "type": "transform wxml file suffix",
+            "file": "mine/mine.wxml",
+            "message": "转换了视图文件后缀, wxml ==> ttml"
+        },
+        "6": {
+            "time": "2020-09-30T06:12:49.490Z",
+            "type": "transform wxss file suffix",
+            "file": "mine/mine.wxss",
+            "message": "转换了样式文件后缀, wxss ==> ttss"
+        },
+        "7": {
+            "time": "2020-09-30T06:12:49.912Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/app.js",
+            "row": 5,
+            "column": 15,
+            "before": "wx.getStorageSync",
+            "after": "tt.getStorageSync",
+            "message": "api: getStorageSync 成功转化"
+        },
+        "8": {
+            "time": "2020-09-30T06:12:49.912Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/app.js",
+            "row": 7,
+            "column": 4,
+            "before": "wx.setStorageSync",
+            "after": "tt.setStorageSync",
+            "message": "api: setStorageSync 成功转化"
+        },
+        "9": {
+            "time": "2020-09-30T06:12:49.913Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/app.js",
+            "row": 10,
+            "column": 4,
+            "before": "wx.login",
+            "after": "tt.login",
+            "message": "api: login 成功转化"
+        },
+        "10": {
+            "time": "2020-09-30T06:12:49.913Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/app.js",
+            "row": 16,
+            "column": 4,
+            "before": "wx.getSetting",
+            "after": "tt.getSetting",
+            "message": "api: getSetting 成功转化"
+        },
+        "11": {
+            "time": "2020-09-30T06:12:49.913Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/app.js",
+            "row": 20,
+            "column": 10,
+            "before": "wx.getUserInfo",
+            "after": "tt.getUserInfo",
+            "message": "api: getUserInfo 成功转化"
+        },
+        "12": {
+            "time": "2020-09-30T06:12:49.940Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/pages/index/index.js",
+            "row": 23,
+            "column": 2,
+            "before": "wx.previewImage",
+            "after": "tt.previewImage",
+            "message": "api: previewImage 成功转化"
+        },
+        "13": {
+            "time": "2020-09-30T06:12:49.940Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/pages/index/index.js",
+            "row": 30,
+            "column": 22,
+            "before": "wx.createVideoContext",
+            "after": "tt.createVideoContext",
+            "message": "api: createVideoContext 成功转化"
+        },
+        "14": {
+            "time": "2020-09-30T06:12:49.940Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/pages/index/index.js",
+            "row": 37,
+            "column": 22,
+            "before": "wx.createVideoContext",
+            "after": "tt.createVideoContext",
+            "message": "api: createVideoContext 成功转化"
+        },
+        "15": {
+            "time": "2020-09-30T06:12:49.940Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/pages/index/index.js",
+            "row": 42,
+            "column": 4,
+            "before": "wx.navigateTo",
+            "after": "tt.navigateTo",
+            "message": "api: navigateTo 成功转化"
+        },
+        "16": {
+            "time": "2020-09-30T06:12:49.941Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/pages/index/index.js",
+            "row": 63,
+            "column": 6,
+            "before": "wx.getUserInfo",
+            "after": "tt.getUserInfo",
+            "message": "api: getUserInfo 成功转化"
+        },
+        "17": {
+            "time": "2020-09-30T06:12:49.955Z",
+            "type": "transform function call arg name",
+            "file": "/Users/nika/InnowWork/Innow/dymish/pages/logs/logs.js",
+            "row": 10,
+            "column": 13,
+            "before": "wx.getStorageSync",
+            "after": "tt.getStorageSync",
+            "message": "api: getStorageSync 成功转化"
+        },
+        "18": {
+            "time": "2020-09-30T06:12:49.971Z",
+            "type": "stdOut",
+            "message": "🍻    Successfully transform js file"
+        },
+        "19": {
+            "time": "2020-09-30T06:12:50.039Z",
+            "type": "stdOut",
+            "message": "🍻    Successfully transform wxml file"
+        },
+        "20": {
+            "time": "2020-09-30T06:12:50.051Z",
+            "type": "stdOut",
+            "message": "🍻    Successfully transform wxss file"
+        }
+    }
+}

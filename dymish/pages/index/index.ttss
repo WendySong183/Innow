@@ -1,4 +1,4 @@
-/* pages/index/index.wxss */
+/* pages/index/index.ttss */
 page{
   background-color: #171824;
 }
@@ -26,6 +26,7 @@ height: 340rpx;
 .border{
   border-bottom:1px solid #1f202c;
   margin-bottom: 50rpx;
+  margin-top: 50rpx;
 }
 .media{
   margin-top: 50rpx;

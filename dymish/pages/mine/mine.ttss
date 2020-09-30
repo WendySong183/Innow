@@ -1,4 +1,4 @@
-/* pages/mine/mine.wxss */
+/* pages/mine/mine.ttss */
 page{
   background-color: #171824;
 }

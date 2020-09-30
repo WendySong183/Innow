@@ -1,7 +1,19 @@
 <!--pages/index/index.wxml-->
-<view>
-  <text></text>
+
+<view class="media">
+  <text>视频</text>
+</view>
+<view class="videoo">
+
+  <video wx:for="{{videoList}}" wx:key="key" src="{{item}} " data-url='{{item}}'
+     bindfullscreenchange="fullScreen"  bindended="closeVideo"  controls id="myvideo" bindtap='play' 
+  ></video>
+</view>
+<view class="border"></view>
+
+<view class="img">
+  <text>图片</text>
 </view>
 <view class="photo">
-  <image wx:for="{{photoList}}" wx:key="key" src="{{item}}" bindtap='previewImage'></image>
+  <image wx:for="{{photoList}}" wx:key="key" src="{{item}} " data-src='{{item}}'bindtap='previewImage'></image>
 </view>

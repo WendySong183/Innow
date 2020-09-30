@@ -8,30 +8,35 @@ Page({
       "https://p6-dy-ipv6.byteimg.com/img/tos-cn-p-0015/6d172f7c389146a5af10a4ee75b8bb84_1600599379~c5_300x400.jpeg",
       "https://p9-dy.byteimg.com/img/tos-cn-p-0015/ca47881949134b66b2c32f54c3eb3d99_1600855399~c5_300x400.jpeg",
       "https://p3-dy-ipv6.byteimg.com/img/tos-cn-p-0015/511a9749128b4fe8ab0a03b0479b26f1_1600943044~c5_300x400.jpeg"
+    ],
+    videoList:[
+      "https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fd70000btjjaifbs79j0rapm7l0&ratio=720p&line=0",
+      "https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f280000btlhqfd2kepr3i4g6v00&ratio=720p&line=0",
+      "https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0300f540000btm76lftchf7ou6cc940&ratio=720p&line=0"
     ]
   },
 
-
-clickImg: function(e){
-  var imgUrl = this.data.photoList;
-  wx.previewImage({
-    urls: [imgUrl], //需要预览的图片http链接列表，注意是数组
-    current: '', // 当前显示图片的http链接，默认是第一个
-    success: function (res) { },
-    fail: function (res) { },
-    complete: function (res) { },
-  })
-
-},
+  //点击查看大图
 previewImage(e) {
-  var current = e.currentTarget.dataset.index;
+  var current=e.target.dataset.src;
   var urls = this.data.photoList
   wx.previewImage({
     current: current, // 当前显示图片的http链接
-    urls: srclist // 需要预览的图片http链接列表
+    urls: urls // 需要预览的图片http链接列表
   })
 },
-
+// 自动全屏
+onShow: function () {
+  this.videoContext = wx.createVideoContext('myVideo', this);// 	创建 video 上下文 VideoContext 对象。
+  this.videoContext.requestFullScreen({	// 设置全屏时视频的方向，不指定则根据宽高比自动判断。
+    direction: 90						// 屏幕逆时针90度
+  });
+},
+// 视频结束后自动退出全屏
+endAction: function () {
+  this.videoContext = wx.createVideoContext('myVideo', this);
+  this.videoContext.exitFullScreen(); //退出全屏
+},
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
