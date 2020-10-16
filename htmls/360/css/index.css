@@ -1,0 +1,105 @@
+/* 清除内外边距，不撑开盒子 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #010001;
+}
+a{
+    /* 去掉链接的下划线 */
+    text-decoration: none;
+}
+/* 固定导航栏 */
+.header{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #010001;
+}
+.headerContent{
+    width: 1200px;
+    height: 48px;
+    margin: auto;
+}
+.headerContent img{
+    float: left;
+    margin-top: 10px;
+}
+.nav{
+    float: right;
+    height: 48px;
+    line-height: 48px;
+}
+.nav a{
+    color: #a4a4a4;
+    margin-left: 35px;
+}
+
+.section1 {
+    background: url(../images/section1_bg.jpg);
+    background-position: center;
+}
+.title-box{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+}
+.title-box p{
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.title-box a{
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-image: url(../images/links.png);
+    margin: auto;
+}
+.title-box a:hover{
+    background-position: -300px 0;
+}
+.ball1{
+    position: absolute;
+    top: 22.7%;
+    left: 20%;
+    width: 13.2%;
+    animation: ball 5s linear infinite alternate;
+}
+.ball2{
+    position: absolute;
+    top: 49.8%;
+    left: 65.16%;
+    width: 22.3%;
+    animation: ball 7s linear infinite alternate;
+}
+@keyframes ball{
+    from{
+        margin-top: 0;
+    }
+    to{
+        margin-top: -25px;
+    }
+}
+.ship{
+    position: absolute;
+    top: 40.18%;
+    left: 63.96%;
+    width: 7.2%;
+    animation: ship 30s linear infinite alternate;
+}
+@keyframes ship{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-45deg);
+    }
+}
