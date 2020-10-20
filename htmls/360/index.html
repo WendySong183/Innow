@@ -24,6 +24,7 @@
     </div>
     <!-- 全屏滚动的代码，必须在固定导航栏下面 -->
     <div id="fullpage">
+        <!-- 第一屏 -->
         <div class="section section1">
             <div class="title-box">
                 <p>畅快浏览 极致体验</p>
@@ -33,10 +34,70 @@
             <img src="images/ball2.png" alt="" class="ball2">
             <img src="images/ship.png" alt="" class="ship">
         </div>
-        <div class="section">Some section2</div>
-        <div class="section">Some section3</div>
-        <div class="section">Some section4</div>
-        <div class="section">Some section5</div>
+        <!-- 第二屏 -->
+        <div class="section">
+            <video autoplay loop muted>
+                <source src="https://s2.ssl.qhres.com/static/dfeefadde568eab0.mp4" type="video/mp4">
+                buzhichi
+            </video>
+            <div class="word-content">
+                <p class="bigword">极速</p>
+                <div class="line"></div>
+                <p class="midword">Chromium78全新内核</p>
+                <p class="smallword">性能强劲，快如闪电</p>
+                <a href="#"></a>
+            </div>
+        </div>
+        <!-- 第3屏 -->
+        <div class="section">
+            <video autoplay loop muted>
+                <source src="https://s3.ssl.qhres.com/static/9bebcedf292f327e.mp4" type="video/mp4">
+                buzhichi
+            </video>
+            <div class="word-content">
+                <p class="bigword">极酷</p>
+                <div class="line"></div>
+                <p class="midword">暗夜炫黑模式</p>
+                <p class="smallword">定义酷，定义你。</p>
+                <a href="#"></a>
+            </div>
+        </div>
+        <!-- 第4屏 -->
+        <div class="section">
+            <video autoplay loop muted>
+                <source src="https://s1.ssl.qhres.com/static/fdf92889c539303c.mp4" type="video/mp4">
+                buzhichi
+            </video>
+            <div class="word-content">
+                <p class="bigword">极安全</p>
+                <div class="line"></div>
+                <p class="midword">DNS加密防劫持</p>
+                <p class="smallword">安全升级，肆意无忌。</p>
+                <a href="#"></a>
+            </div>
+        </div>
+        <!-- 第5屏 -->
+        <div class="section">
+            <video autoplay loop muted>
+                <source src="https://s1.ssl.qhres.com/static/7e7f0ec4a0cc7a66.mp4" type="video/mp4">
+                buzhichi
+            </video>
+            <div class="word-content">
+                <p class="bigword">极视界</p>
+                <div class="line"></div>
+                <p class="midword">4K高清视频播放</p>
+                <p class="smallword">还原真实之美 ，尽显万物本色。</p>
+                <a href="#"></a>
+            </div>
+            <!-- 底部 -->
+            <div class="footer">
+                Copyright © 2005-2019 360.CN All Rights Reserved 360互联网安全中心 隐私权政策 京ICP证080047号 <br>
+                <img src="images/icon.png" alt="">
+                京公网安备
+                11000002000006号
+
+            </div>
+        </div>
     </div>
 
     <!-- 必须先引入jQuery -->
@@ -46,8 +107,17 @@
         $(function () {
             $('#fullpage').fullpage({
                 'navigation': true,
+                // 滚动到当前屏幕，文字模块渐渐显示出来
+                afterLoad: function () {
+                    $(this).find('.word-content').fadeIn();
+                },
+                // 离开当前屏幕，文字模块渐渐淡出
+                onLeave: function () {
+                    $(this).find('.word-content').fadeOut();
+                },
             });
         });
+
     </script>
 
 </body>
