@@ -1,0 +1,126 @@
+.sk_list {
+    float: left;
+    ;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    padding: 0 30px;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    height: 47px;
+    line-height: 49px;
+    font-size: 14px;
+    padding: 0 25px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+.sk_bd {
+    margin-top: 25px;
+}
+
+.sk_bd ul li {
+    float: left;
+    overflow: hidden;
+    width: 290px;
+    height: 460px;
+    padding-left: 10px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #e60012;
+}
+
+.sk_bd ul li img {
+    width: 290px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.sk_bd ul li p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.xianjia {
+    color: #e60012;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.yuanjia {
+    color: #a4a4a4;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.jindu {
+    height: 40px;
+    line-height: 40px;
+    padding-right: 15px;
+}
+
+.jindu>div {
+    float: left;
+}
+
+.tuxing {
+    float: left;
+    width: 135px;
+    height: 15px;
+    background-color: #e60012;
+    border-radius: 7px;
+    margin: 10px 10px 0;
+}
+
+.baise {
+    float: right;
+    width: 17px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 0 7px 7px 0;
+    border: 1px solid #e60012;
+}
+
+.qianggou {
+    height: 50px;
+    background-color: #e60012;
+    text-align: center;
+    line-height: 50px;
+    margin-left: -10px;
+}
+
+.qianggou a {
+    color: #fff;
+    font-size: 18px;
+}
