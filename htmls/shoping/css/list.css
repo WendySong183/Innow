@@ -98,18 +98,22 @@
     float: left;
     width: 135px;
     height: 15px;
-    background-color: #e60012;
+    border: 1px solid #e60012;
     border-radius: 7px;
     margin: 10px 10px 0;
+    padding: 1px;
 }
 
 .baise {
-    float: right;
-    width: 17px;
-    height: 15px;
-    background-color: #fff;
-    border-radius: 0 7px 7px 0;
-    border: 1px solid #e60012;
+    width: 87%;
+    height: 100%;
+    background-color: #e60012;
+    border-radius: 7px;
+    transition: all 1s;
+}
+
+.tuxing:hover .baise {
+    width: 100%;
 }
 
 .qianggou {
