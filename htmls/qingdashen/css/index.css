@@ -1,0 +1,24 @@
+.box {
+    width: 100%;
+    position: relative;
+}
+
+.box img:nth-child(1) {
+    width: 100%;
+}
+
+.box img:nth-child(2) {
+    position: absolute;
+    bottom: 12%;
+    left: 30%;
+    width: 39%;
+}
+
+p {
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
