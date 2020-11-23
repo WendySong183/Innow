@@ -4,63 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>请大神</title>
+    <link rel="shortcut icon" href="logo.ico" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
+
 <body>
-    <div class="box">
-        <img src="images/bg.cee2145.jpg" alt="" id='bg'>
-        <img src="images/kai.f5a68bf.png" alt="" id='kai'>
-        <p>温馨提示：点击“开”，开始抽签</p>
-    </div>
+    <section>
+        <img src="images/bg2.jpg" alt="" id='bg'>
+        <img src="images/kai.png" alt="" id='kai'>
+        <p>温馨提示：点击“开”字，请大神</p>
+        <div class="muma">
+            <div>
+                <img src="images/1.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/2.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/3.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/5.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/6.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/7.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/8.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/9.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/10.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/11.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/12.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
     <script>
         var img = document.getElementById('kai')
         var bg = document.getElementById('bg')
         var p = document.querySelector('p')
+        var muma = document.querySelector('.muma')
 
         function getRandom(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
         img.onclick = function() {
-            var random = getRandom(1, 5);
-            switch (random) {
-                case 1:
-                    bg.src = 'images/1.jpg';
-                    img.style.display = 'none';
-                    p.innerHTML = '温馨提示：点击图片任意区域再抽一次';
-                    break
-                case 2:
-                    bg.src = 'images/2.jpg';
-                    img.style.display = 'none';
-                    p.innerHTML = '温馨提示：点击图片任意区域再抽一次';
-                    break
-                case 3:
-                    bg.src = 'images/3.jpg';
-                    img.style.display = 'none';
-                    p.innerHTML = '温馨提示：点击图片任意区域再抽一次';
-                    break
-                case 4:
-                    bg.src = 'images/4.jpg';
-                    img.style.display = 'none';
-                    p.innerHTML = '温馨提示：点击图片任意区域再抽一次';
-                    break
-                case 5:
-                    bg.src = 'images/5.jpg';
-                    img.style.display = 'none';
-                    p.innerHTML = '温馨提示：点击图片任意区域再抽一次';
-                    break
-            }
+            console.log('1');
+
+            var random = getRandom(1, 12);
+            var src = 'images/' + random + '.jpg'
+            console.log(src);
+
+            bg.src = src;
+            img.style.display = 'none';
+            muma.style.display = 'none';
+            p.innerHTML = '温馨提示：点击图片任意区域再请一次';
 
         }
         bg.onclick = function() {
-            bg.src = 'images/bg.cee2145.jpg';
+            bg.src = 'images/bg2.jpg';
             img.style.display = 'block';
-            p.innerHTML = '温馨提示：点击“开”，开始抽签';
+            muma.style.display = 'block';
+            p.innerHTML = '温馨提示：点击“开”字，请大神';
         }
     </script>
+
 </body>
 
 </html>

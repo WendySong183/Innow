@@ -1,17 +1,18 @@
-.box {
+section {
     width: 100%;
     position: relative;
 }
 
-.box img:nth-child(1) {
+#bg {
     width: 100%;
 }
 
-.box img:nth-child(2) {
+section img:nth-child(2) {
     position: absolute;
     bottom: 12%;
     left: 30%;
     width: 39%;
+    z-index: 1;
 }
 
 p {
@@ -21,4 +22,85 @@ p {
     left: 0;
     width: 100%;
     text-align: center;
+}
+
+.muma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50px auto;
+    width: 180px;
+    height: 600px;
+    transform-style: preserve-3d;
+    animation: rotate 8s linear infinite;
+}
+
+.muma img {
+    width: 100%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.muma div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url(../images/bg.jpg) no-repeat; */
+}
+
+.muma div:nth-child(1) {
+    transform: translateZ(500px);
+}
+
+.muma div:nth-child(2) {
+    transform: rotateY(30deg) translateZ(500px);
+}
+
+.muma div:nth-child(3) {
+    transform: rotateY(60deg) translateZ(500px);
+}
+
+.muma div:nth-child(4) {
+    transform: rotateY(90deg) translateZ(500px);
+}
+
+.muma div:nth-child(5) {
+    transform: rotateY(120deg) translateZ(500px);
+}
+
+.muma div:nth-child(6) {
+    transform: rotateY(150deg) translateZ(500px);
+}
+
+.muma div:nth-child(7) {
+    transform: rotateY(180deg) translateZ(500px);
+}
+
+.muma div:nth-child(8) {
+    transform: rotateY(210deg) translateZ(500px);
+}
+
+.muma div:nth-child(9) {
+    transform: rotateY(240deg) translateZ(500px);
+}
+
+.muma div:nth-child(10) {
+    transform: rotateY(270deg) translateZ(500px);
+}
+
+.muma div:nth-child(11) {
+    transform: rotateY(300deg) translateZ(500px);
+}
+
+.muma div:nth-child(12) {
+    transform: rotateY(330deg) translateZ(500px);
 }

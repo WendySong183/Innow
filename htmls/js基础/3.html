@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login {
+            width: 200px;
+            height: 30px;
+            border: 1px solid #555555;
+            outline: none;
+            margin-right: 20px;
+            color: #cccccc;
+        }
+        
+        .light {
+            margin: 100px auto;
+            width: 300px;
+            height: 300px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 世纪佳缘 -->
+    <div class="box">
+        <input type="text" class="login" value="用户名">
+    </div>
+    <script>
+        var login = document.querySelector('.login')
+        login.onfocus = function() {
+            this.style.border = '1px solid pink';
+            this.style.color = '#555555'
+            if (this.value === '用户名') {
+                this.value = ''
+            }
+        }
+        login.onblur = function() {
+            this.style.border = '1px solid #555555'
+            if (this.value === '') {
+                this.value = '用户名'
+                this.style.color = '#cccccc'
+            }
+        }
+    </script>
+    <!-- 开关灯 -->
+    <div class="light">
+        <button>开关灯</button>
+    </div>
+    <script>
+        var bt = document.querySelector('button')
+        var light = document.querySelector('.light')
+        var flag = 0
+        bt.onclick = function() {
+            console.log(flag);
+
+            if (flag == 0) {
+                light.style.backgroundColor = 'pink';
+                flag = 1;
+            } else {
+                light.style.backgroundColor = 'black';
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>
