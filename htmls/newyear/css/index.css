@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pic {
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+a {
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    border-radius: 50%;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 500px;
+            margin: 100px auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            border: 1px solid #333;
+        }
+        
+        thead tr {
+            height: 40px;
+            background-color: #ccc;
+        }
+        
+        img {
+            position: absolute;
+            top: 0;
+            left: 0s;
+            z-index: -1;
+        }
+        
+        .jd {
+            display: none;
+            position: relative;
+            width: 200px;
+            height: 40px;
+            border: 1px solid #000000;
+            margin-bottom: 20px;
+        }
+        
+        .jd::before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border-width: 15px 15px 0 0;
+            border-color: transparent red transparent transparent;
+            border-style: solid;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>科目</th>
+                <th>成绩</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        // 1.先去准备好学生的数据
+        var datas = [{
+            name: '魏璎珞',
+            subject: 'JavaScript',
+            score: 100
+        }, {
+            name: '弘历',
+            subject: 'JavaScript',
+            score: 98
+        }, {
+            name: '傅恒',
+            subject: 'JavaScript',
+            score: 99
+        }, {
+            name: '明玉',
+            subject: 'JavaScript',
+            score: 88
+        }, {
+            name: '大猪蹄子',
+            subject: 'JavaScript',
+            score: 0
+        }];
+        // 2.给tbody里添加行
+        var tbody = document.querySelector('tbody')
+        for (var i = 0; i < datas.length; i++) {
+            var tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            // 3.给列里面添加行
+            for (var k in datas[i]) {
+                var td = document.createElement('td');
+                td.innerHTML = datas[i][k];
+                tr.appendChild(td);
+            }
+            // 4.单独添加删除
+            var as = document.createElement('td');
+            as.innerHTML = '<a herf="javascript:;">删除</a>'
+            tr.appendChild(as)
+        }
+        // 5.绑定删除事件
+        var ar = document.querySelectorAll('a');
+        for (var i = 0; i < ar.length; i++) {
+            ar[i].onclick = function() {
+                tbody.removeChild(this.parentNode.parentNode)
+            }
+        }
+    </script>
+    <!-- 鼠标移动跟随 -->
+    <img src="../images/angel.gif" alt="">
+    <script>
+        var img = document.querySelector('img');
+        document.addEventListener('mousemove', function(e) {
+            var left = e.pageX;
+            var top = e.pageY;
+            img.style.top = top - 50 + 'px';
+            img.style.left = left - 40 + 'px';
+
+        })
+    </script>
+    <!-- 京东获取光标，输入放大 -->
+    <div class="jd"></div>
+    <input type="text">
+    <script>
+        var input = document.querySelector('input');
+        var jd = document.querySelector('.jd');
+        document.addEventListener('keyup', function(e) {
+            if (e.keyCode === 83) {
+                input.focus();
+            }
+
+        })
+        input.addEventListener('keyup', function(e) {
+            if (this.value !== '') {
+                jd.innerText = this.value;
+                jd.style.display = 'block';
+            } else {
+                jd.style.display = 'none';
+            }
+        })
+        input.addEventListener('blur', function(e) {
+            jd.style.display = 'none';
+        })
+        input.addEventListener('focus', function(e) {
+            jd.style.display = 'block';
+        })
+    </script>
+</body>
+
+</html>
