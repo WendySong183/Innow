@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section {
+    width: 100%;
+    height: 600px;
+    margin: 50px auto;
+}
+
+section>div {
+    width: 80%;
+    height: 300px;
+    border: 1px solid #666666;
+    margin: 0 auto;
+}
+
+
+/* 正面 */
+
+.cover p {
+    width: 80%;
+    height: 50px;
+    margin: 5px auto;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #666666;
+}
+
+.cover img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border: 1px solid #666666;
+    margin: 0 auto;
+}
+
+
+/* 背面 */
+
+.show_addressee {
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #666666;
+    margin: 20px auto 0;
+    /* background-color: pink; */
+}
+
+.show_content {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    border: 1px solid #666666;
+}
+
+.show_content p {
+    width: 100%;
+    text-indent: 2em;
+    /* margin: 100px; */
+}
+
+.show_content_p {
+    flex: 1;
+    text-align: center;
+    text-indent: 0em;
+    /* line-height: 300px; */
+}
+
+.show_user {
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px auto;
+    /* background-color: palegreen; */
+    text-align: right;
+    border: 1px solid #666666;
+}
+
+.btn {
+    float: left;
+    width: 30%;
+    height: 40px;
+    margin: 20px 10%;
+    /* border-radius: 20px; */
+    border: 1px solid #666666;
+    /* background-color: paleturquoise; */
+    text-align: center;
+    line-height: 40px;
+    background-color: #efefef;
+}
