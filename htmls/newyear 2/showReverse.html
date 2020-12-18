@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimun-scale=1.0,maximum-scale=1.0,user-scable=no">
+    <title>展示（背面）</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/showReverse.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="show_addressee">收信人</div>
+
+        <div class="show_content">
+            <!-- <img src="" alt="" class="pic"> -->
+            <p>祝您：</p>
+            <p class="show_content_p">新年快乐</p>
+        </div>
+
+        <div class="show_user">发信人</div>
+
+    </section>
+    <a href=makecover.html class="btn">点击制作同款</a>
+    <!-- <script>
+        var showAddressee = document.querySelector('.show_addressee');
+        var showContentP = document.querySelector('.show_content_p');
+        var showUser = document.querySelector('.show_user');
+        console.log(location.search.substr(1));
+        var arr = location.search.substr(1).split('&');
+        var obj = new Object();
+        for (var i = 0; i < arr.length; i++) {
+            var tmp_arr = arr[i].split('=')
+            obj[decodeURIComponent(tmp_arr[0])] = decodeURIComponent(tmp_arr[1]);
+
+        }
+        showAddressee.innerHTML = obj['addressee'];
+        showContentP.innerHTML = obj['content'];
+        showUser.innerHTML = obj['user'];
+    </script> -->
+</body>
+
+</html>

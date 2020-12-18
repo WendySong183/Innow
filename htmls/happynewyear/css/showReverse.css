@@ -1,0 +1,81 @@
+ section {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 100%;
+     /* background: url(../images/bg.jpg) no-repeat; */
+     font-size: 30px;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: #000;
+ }
+ 
+ .pic {
+     position: fixed;
+     top: 140px;
+     right: 10%;
+     width: 200px;
+     height: 200px;
+     border: 1px solid #666666;
+     /* z-index: 1; */
+     background: #ffffff;
+ }
+ 
+ .show_addressee {
+     width: 80%;
+     height: 50px;
+     line-height: 50px;
+     border: 1px solid #666666;
+     margin: 20px auto;
+     /* background-color: pink; */
+ }
+ 
+ .show_content {
+     width: 80%;
+     height: 450px;
+     /* line-height: 500px; */
+     display: flex;
+     flex-direction: column;
+     /* text-align: center; */
+     /* background-color: skyblue; */
+     margin: 50px auto;
+     border: 1px solid #666666;
+ }
+ 
+ .show_content p {
+     width: 100%;
+     text-indent: 2em;
+     /* margin: 100px; */
+ }
+ 
+ .show_content_p {
+     flex: 1;
+     text-align: center;
+     text-indent: 0em;
+     line-height: 300px;
+ }
+ 
+ .show_user {
+     width: 80%;
+     height: 50px;
+     line-height: 50px;
+     margin: 20px auto;
+     /* background-color: palegreen; */
+     text-align: right;
+     border: 1px solid #666666;
+ }
+ 
+ .btn {
+     display: block;
+     width: 200px;
+     height: 40px;
+     margin: 20px auto;
+     /* border-radius: 20px; */
+     border: 1px solid #666666;
+     /* background-color: paleturquoise; */
+     text-align: center;
+     line-height: 40px;
+     background-color: #efefef;
+ }

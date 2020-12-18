@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimun-scale=1.0,maximum-scale=1.0,user-scable=no">
+    <title>制作（背面）</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/makeReverse.css">
+</head>
+
+<body>
+    <h3>制作背面</h3>
+    <form action="preview.html" method="GET" name="verso">
+        <div class="section">
+            <div class="section_addressee">收信人: </div>
+            <input type="text" name="addressee" placeholder="请输入收信人信息" required autocomplete="off">
+        </div>
+        <div class="section">
+            <div class="section_content">祝福语: </div>
+            <textarea name="content" id="" cols="30" rows="10" placeholder="请输入祝福语" required></textarea>
+        </div>
+        <div class="section">
+            <div class="section_user">发信人: </div>
+            <input type="text" name="user" placeholder="请输入发信人信息" required autocomplete="off">
+        </div>
+        <div class="accept">
+            <input type="text" name="title" class="atitle">
+            <input type="text" name="pic" class="apic">
+
+        </div>
+        <div class="btn_area">
+            <input type="submit" class="btn" value="完成">
+
+            <input type="reset" class="btn">
+
+        </div>
+    </form>
+    <script>
+        var title = document.querySelector('.atitle');
+        var pic = document.querySelector('.apic');
+        console.log(location.search.substr(1));
+        var arr = location.search.substr(1).split('&');
+        var obj = new Object();
+        for (var i = 0; i < arr.length; i++) {
+            var tmp_arr = arr[i].split('=')
+            obj[decodeURIComponent(tmp_arr[0])] = decodeURIComponent(tmp_arr[1]);
+
+        }
+        title.value = obj['title'];
+        pic.value = obj['pic'];
+    </script>
+</body>
+
+</html>
