@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bgsrc {
+            width: 500px;
+            height: 200px;
+            background: url(image/2.jpg) no-repeat;
+        }
+        
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgsrc">
+        <img src="image/1.jpg" alt="" id='src'>
+    </div>
+
+
+    <script>
+        var bgsrc = document.querySelector('#bgsrc');
+        var src = document.querySelector('#src');
+        drawAndShareImage(bgsrc, src);
+
+        function drawAndShareImage(bgsrc, src) {
+            let canvas = document.createElement('canvas');
+            canvas.width = 300;
+            canvas.height = 700;
+            let context = canvas.getContext('2d');
+            context.rect(0, 0, canvas.width, canvas.height);
+            let bgImg = new Image();
+            bgImg.src = bgsrc; // 背景图的url
+            bgImg.crossOrigin = 'Anonymous';
+            bgImg.onload = () => {
+                context.drawImage(bgImg, 0, 0, 300, 700);
+                let img = new Image();
+                img.src = src + '?v=' + Math.random(); // 需要合进去的图片url
+                img.src = src;
+                img.crossOrigin = 'Anonymous';
+                img.onload = () => {
+                    context.drawImage(img, 55, 330, 200, 220);
+                    let base64 = canvas.toDataURL('image/png');
+                    this.share = base64; //赋值给变量
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

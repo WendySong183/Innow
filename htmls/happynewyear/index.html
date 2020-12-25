@@ -12,7 +12,7 @@
 <body>
     <div class="pic">
         <h3>良博贺新年</h3>
-        <a href="myCards.html" class="mine">
+        <a href="card.html" class="mine">
             <img src="image/mine.png" alt="" class="font">
         </a>
         <ul>
@@ -28,7 +28,18 @@
         </a>
         <!-- <a href="myCards.html" class="mine">我的</a> -->
     </div>
-
+    <button>测试</button>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $.get("https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid=OPENID&lang=zh_CN", function(data, status) {
+                    alert("数据: " + data[0].nickname + "\n状态: " + status);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

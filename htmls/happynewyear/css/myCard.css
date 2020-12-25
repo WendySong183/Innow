@@ -13,7 +13,7 @@ h3 {
     text-align: center;
     font-size: 40px;
     line-height: 40px;
-    margin: 10px auto;
+    margin: 5% auto;
 }
 
 ul {
@@ -30,11 +30,53 @@ li {
 }
 
 li img {
-    width: 100%;
+    width: 90%;
+    margin: 5%;
 }
 
+
+/* .select>img {
+    border: 3px solid #00c09e;
+    border-radius: 15px;
+} */
+
 li input {
+    /* display: none; */
+    -webkit-appearance: none;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 5%;
+    left: 5%;
+    /* width: 90%;
+    height: 90%; */
+    /* border: 3px solid #00c09e;
+    border-radius: 15px; */
+    z-index: 1;
+}
+
+input:checked {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border: 3px solid #00c09e;
+    border-radius: 15px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    /* background-color: paleturquoise; */
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    border: 1px solid #666666;
 }

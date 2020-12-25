@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+    <style>
+        .qianduanwz {
+            /* display: none; */
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: -959;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="qianduanwz">
+        <!-- <img src="1.jpg" alt=""> -->
+        <img src="image/bg3.png" alt="">
+        <img src="image/title.png" alt="">
+        <p>测试<br>试一下</p>
+    </div>
+    <script>
+        new html2canvas(document.querySelector('.qianduanwz'), {
+            allowTaint: true,
+            useCORS: true
+        }).then(canvas => {
+
+            // canvas为转换后的Canvas对象
+            // let oImg = new Image();
+            // oImg.src = canvas.toDataURL(); // 导出图片
+            document.body.appendChild(canvas); // 将生成的图片添加到body
+        });
+
+        // var div = document.querySelector('div');
+        // html2canvas(div, {
+        //     useCORS: true,
+        //     onrendered: function(canvas) {
+        //         $img.src = canvas.toDataURL('image/png');
+        //     },
+        //     onclone: function(doc) {
+        //         // hiddenDiv = doc.getElementById('parent');
+        //         div.style.display = 'block'; //  这里，设置display为block
+        //     }
+        // });
+    </script>
+
+</body>
+
+</html>

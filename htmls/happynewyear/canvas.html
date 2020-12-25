@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叠加图片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .pic {
+            /* display: none;
+            position: relative; */
+            width: 300px;
+            height: 532px;
+            margin: 0 auto;
+        }
+        
+        img {
+            display: none;
+            /* float: left; */
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+            width: 300px;
+            /* height: 722px; */
+        }
+        /* canvas {
+            width: 400px;
+            height: 632px;
+            border: 1px solid #000000;
+            margin: 0 600px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="pics">
+        <img id="1" src="image/1_bg1.png" alt="The Scream">
+        <img id="2" src="image/2_2.png" alt="The Scream">
+        <img id="3" src="image/3_2.png" alt="The Scream">
+        <img id="4" src="image/4_2.png" alt="The Scream">
+        <img id="5" src="image/5_2.png" alt="The Scream">
+    </div>
+
+
+
+    <canvas id="myCanvas">
+您的浏览器不支持 HTML5 canvas 标签。</canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        c.width = document.documentElement.clientWidth;
+        c.height = document.documentElement.clientHeight;
+        console.log(c.width);
+
+
+        var img1 = document.getElementById("1");
+        var img2 = document.getElementById("2");
+        var img3 = document.getElementById("3");
+        var img4 = document.getElementById("4");
+        var img5 = document.getElementById("5");
+
+
+        // context.drawImage(img, x, y, width, height);
+        img1.onload = function() {
+            ctx.drawImage(img1, 0, 0, c.width, c.height);
+            ctx.drawImage(img2, 0, 0, c.width, c.height);
+            ctx.drawImage(img3, 0, 0, c.width, c.height);
+            ctx.drawImage(img4, 0, 0, c.width, c.height);
+            ctx.drawImage(img5, 0, 0, c.width, c.height);
+        }
+    </script>
+
+</body>
+
+</html>
