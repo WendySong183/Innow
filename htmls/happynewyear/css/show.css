@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pic {
+    /* display: none;
+    position: relative; */
+    width: 300px;
+    height: 532px;
+    margin: 0 auto;
+}
+
+img {
+    display: none;
+    /* float: left; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 300px;
+    /* height: 722px; */
+}

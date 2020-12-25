@@ -43,6 +43,7 @@ li img {
 li input {
     /* display: none; */
     -webkit-appearance: none;
+    border: none;
     position: absolute;
     top: 5%;
     left: 5%;

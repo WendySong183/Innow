@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimun-scale=1.0,maximum-scale=1.0,user-scable=no">
+    <title>图片</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/show.css" />
+</head>
+
+<body>
+    <div class="pics">
+        <img src="" alt="The Scream" id="bg_1">
+        <img src="" alt="The Scream" id="bg_2">
+        <img src="" alt="The Scream" id="bg_3">
+
+    </div>
+
+
+
+    <canvas id="myCanvas">
+您的浏览器不支持 HTML5 canvas 标签。</canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        c.width = document.documentElement.clientWidth;
+        c.height = document.documentElement.clientHeight;
+        console.log(c.width);
+
+
+        var img1 = document.getElementById("bg_1");
+        var img2 = document.getElementById("bg_2");
+        var img3 = document.getElementById("bg_3");
+
+
+        var arr = location.search.substr(1).split('&');
+        var obj = new Object();
+        for (var i = 0; i < arr.length; i++) {
+            var tmp_arr = arr[i].split('=')
+            obj[decodeURIComponent(tmp_arr[0])] = decodeURIComponent(tmp_arr[1]);
+
+        }
+
+        img1.src = 'image/' + obj['selected_bg1'];
+        img2.src = 'image/' + obj['selected_bg2'];
+        img3.src = 'image/' + obj['selected_bg3'];
+
+
+        // context.drawImage(img, x, y, width, height);
+        img1.onload = function() {
+            ctx.drawImage(img1, 0, 0, c.width, c.height);
+            ctx.drawImage(img2, 0, 0, c.width, c.height);
+            ctx.drawImage(img3, 0, 0, c.width, c.height);
+
+        }
+        convertCanvasToImage(canvas);
+
+        function convertCanvasToImage(canvas) {
+            var image = new Image();
+            image.src = canvas.toDataURL("image/png");
+            return image;
+        }
+    </script>
+</body>
+
+</html>
